@@ -1,0 +1,44 @@
+.container {
+  padding-bottom: 30px;
+  height: fit-content;
+}
+
+.todo-title {
+  color: rgb(221, 189, 221);
+}
+
+.listGroup {
+  border-bottom: 2px;
+  border-style: dashed;
+}
+
+.footer {
+  border: 1px solid rgb(224, 224, 224);
+  border-top: none;
+  height: 2rem;
+  font-size: x-small;
+  font-weight: lighter;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15), 0 10px 0 -5px rgb(255, 255, 255),
+    0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px rgb(255, 255, 255),
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
+}
+
+.delete {
+  position: absolute;
+  display: none;
+}
+
+.delete::after {
+  content: "x";
+  font-weight: lighter;
+  color: red;
+}
+
+.listed:hover + .delete,
+.delete:hover {
+  display: inline-block;
+}
+
+.btn-danger {
+  justify-self: center;
+}
